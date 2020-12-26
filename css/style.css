@@ -135,8 +135,12 @@ img {
 }
 
 .icon-mail {
-  width: 16px;
-  height: 10px;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
   fill: currentColor;
 }
 
