@@ -152,6 +152,11 @@ img {
   margin-right: 10px;
 }
 
+.contacts-nav .icon-smartphone:hover,
+.contacts-nav .icon-smartphone:focus {
+  fill: var(--accent-color);
+}
+
 /* Стили для index.html */
 
 /* Hero */
