@@ -120,6 +120,10 @@ img {
 }
 
 .contacts-nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 32px 0;
 
   color: var(--txt-second-color);
@@ -135,13 +139,22 @@ img {
 }
 
 .icon-mail {
+  width: 16px;
+  height: 12px;
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .icon-smartphone {
   width: 10px;
   height: 16px;
   fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }
 
 /* Стили для index.html */
