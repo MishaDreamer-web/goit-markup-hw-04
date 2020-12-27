@@ -11,6 +11,8 @@
   --footer-bg-color: #2f303a;
   --border-bottom-color: #ececec;
   --card-border-color: #eeeeee;
+  --social-link-color: #afb1b8;
+  --icon-white-color: #ffffff;
 }
 
 body {
@@ -341,11 +343,11 @@ button.primary:focus {
   line-height: 1.19;
 }
 
-.teammate-social {
-}
-
 .team-social {
   display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 30px;
 }
 
 .social-link {
@@ -359,6 +361,21 @@ button.primary:focus {
   background-color: green;
   border-radius: 50%;
 }
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--social-link-color);
+}
+
+.social-icon:hover,
+.social-icon:hover {
+  fill: var(--icon-white-color);
+}
+
 .team-social .item:not(:last-child) {
   margin-right: 10px;
 }
