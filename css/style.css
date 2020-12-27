@@ -241,34 +241,20 @@ button.primary:focus {
   margin-right: 30px;
 }
 
-.about-us .item::before {
-  content: '';
-  display: block;
+.icon-studio {
+  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  outline: 1px solid red;
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+
   background-color: var(--button-bg-color-);
   border-radius: 4px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.icon-studio .icon {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section-text {
@@ -348,11 +334,33 @@ button.primary:focus {
 .teammate-profession {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   color: var(--txt-second-color);
   font-size: 16px;
   line-height: 1.19;
+}
+
+.teammate-social {
+}
+
+.team-social {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  outline: 1px solid red;
+  background-color: green;
+  border-radius: 50%;
+}
+.team-social .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Footer */
