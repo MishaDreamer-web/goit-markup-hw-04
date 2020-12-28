@@ -13,6 +13,7 @@
   --card-border-color: #eeeeee;
   --social-link-color: #afb1b8;
   --icon-white-color: #ffffff;
+  --clients-logo-border-color: #afb1b8;
 }
 
 body {
@@ -123,7 +124,7 @@ img {
 
 .contacts-nav .link {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 
   padding: 32px 0;
@@ -317,6 +318,8 @@ button.primary:focus {
   border-bottom-left-radius: 4px;
 
   background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-card {
@@ -371,12 +374,67 @@ button.primary:focus {
   margin-right: 10px;
 }
 
+/* Clients */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-tittle {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--txt-main-color);
+}
+
+.clients-logo {
+  display: flex;
+}
+
+.clients-logo .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  width: 170px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--clients-logo-border-color);
+  border-radius: 4px;
+  fill: var(--social-link-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* Footer */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--footer-bg-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-left {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -409,6 +467,47 @@ address {
 
 .footer-item .link {
   padding: 0;
+
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social .tittle {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--txt-white-color);
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-list .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--icon-white-color);
+}
+
+.footer-social-list .social-link:hover,
+.footer-social-list .social-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-list .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Стили для portfolio.html */
